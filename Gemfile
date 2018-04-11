@@ -51,6 +51,7 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-# group :production do
-#   gem 'pg', '0.21.0'
-# end
+group :production do
+ gem 'pg'     #herokuはpgを使います
+ gem 'rails_12factor'
+end
